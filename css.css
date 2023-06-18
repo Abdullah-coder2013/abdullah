@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
+
+body {
+    background: #41e593;
+    display : flex;
+    justify-content: center;
+    height: 100vh;
+    font-size: x-large;
+    
+}
+
+h1 {
+    font-family: "Lilita One";
+}
+
+div {
+    margin:auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    background-color: rgb(220, 229, 234);
+    width: 30%;
+    height: 500px;
+    border-radius: 10%;
+}
+p {
+    font-family: "Poppins";
+}
+
+code {
+    font-family: "Martian Mono";
+    color: #4198e5;
+}
+
+span {
+    color: #cb4a4a;
+}
+
+li {
+    font-family: "Architects Daughter";
+}
+
+a {
+    text-decoration: none;
+    color: #632391;
+    font-weight: bold;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a:hover {
+    color: #cb4a4a;
+    transition: 0.5s;
+    transform: translateY(0.25rem);
+}
