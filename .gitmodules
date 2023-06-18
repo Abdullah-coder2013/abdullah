@@ -1,0 +1,9 @@
+[submodule "Quran"]
+	path = Quran
+	url = https://github.com/Abdullah-coder2013/Quran.git
+[submodule "JsCalc"]
+	path = JsCalc
+	url = https://github.com/Abdullah-coder2013/JsCalc.git
+[submodule "ColorSircle"]
+	path = ColorSircle
+	url = https://github.com/Abdullah-coder2013/ColorSircle.git
