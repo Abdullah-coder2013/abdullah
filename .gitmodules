@@ -4,9 +4,6 @@
 [submodule "ColorSircle"]
 	path = ColorSircle
 	url = https://github.com/Abdullah-coder2013/ColorSircle.git
-[submodule "Quran"]
-	path = Quran
-	url = https://github.com/Abdullah-coder2013/Quran.git
 [submodule "99-Names-Of-Allah"]
 	path = 99-Names-Of-Allah
 	url = https://github.com/Abdullah-coder2013/99-Names-Of-Allah.git
