@@ -1,0 +1,11 @@
+{
+  "name": "abdullah",
+  "version": "1.0.0",
+  "description": "My Website to track my other websites.",
+  "main": "index.js",
+  "scripts": {
+    "buildCSS": "npx tailwindcss -i ./css.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "MIT"
+}

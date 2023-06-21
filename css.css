@@ -1,13 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
 
-body {
-    background: #41e593;
-    display : flex;
-    justify-content: center;
-    height: 100vh;
-    font-size: x-large;
-    
-}
 
 h1 {
     font-family: "Lilita One";
