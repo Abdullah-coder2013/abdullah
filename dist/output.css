@@ -745,6 +745,8 @@ hr {
 
 .btn {
   margin-top: 30px;
+  padding: 8px;
+  border-radius: 30px;
 }
 
 .bottom-container {
