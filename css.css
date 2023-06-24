@@ -90,7 +90,7 @@
   .skills {
     display: inline-block;
     line-height: 2;
-    padding: 30px;
+    /* padding: 30px; */
   }
   .undl {
     text-decoration: underline;
