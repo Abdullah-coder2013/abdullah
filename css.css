@@ -1,54 +1,172 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
 
 
-h1 {
-    font-family: "Lilita One";
-}
 
-div {
-    margin:auto;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    vertical-align: center;
-    background-color: rgb(220, 229, 234);
-    width: 30%;
-    height: 500px;
-    border-radius: 10%;
-}
-p {
-    font-family: "Poppins";
-}
-
-code {
-    font-family: "Martian Mono";
-    color: #4198e5;
-}
-
-span {
-    color: #cb4a4a;
-}
-
-li {
-    font-family: "Architects Daughter";
-}
-
-a {
-    text-decoration: none;
-    color: #632391;
+.first-container {
+    background-color: #364451;
+    padding: 50px;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", monospace;
+    color: #566879;
+    background-color: #1d252d;
+  }
+  .prog {
+    font-family: "Montserrat", sans-serif;
+  }
+  .mountain {
+    margin: auto;
+    margin-top: 40px;
+  }
+  h1 {
+    margin: 0px auto 0 auto;
+    padding-top: 50px;
+    font-family: "Sacramento";
     font-weight: bold;
-}
-
-ol {
+    font-size: 5.625em;
+    color: #66BFBF;
+    line-height: 2;
+  }
+  h2 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+  h3 {
+    font-family: "Martian Mono", sans-serif;
+    color: #11999E;
+    font-weight: bold;
+    margin-bottom: 22px;
+  }
+  .bottom-cloud {
+    position: absolute;
+  }
+  .top-cloud {
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    padding-top: 50px
+  }
+  .profile {
+    display: inline-block;
+    padding: 50px;
+    
+  }
+  .profiled {
+    width: 200px;
+    border-radius: 200px;
+    border: 5px solid;
+    border-color: #191a1b;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  a:hover {
+    color: #cf4947;
+  }
+  ol {
+    
     list-style-type: none;
-}
+    text-align: center;
+    padding: 0;
+  }
+  .link {
+    font-family: "Architects Daughter", cursive;
+    font-size: larger;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    display: inline-block;
+    line-height: 2;
+    padding: 30px;
+  }
+  .undl {
+    text-decoration: underline;
+  }
+  a {
+    color: #11999E;
+    text-decoration: none;
+    font-family: "Martian Mono";
+    transition: all;
+  }
+  .js {
+    border-radius: 50px;
+  }
+  .skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  .py {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+  }
+  .js {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+  }
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #808b90;
+    border-width: 10px;
+    width: 5%;
+    margin: auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
 
-a:hover {
-    color: #cb4a4a;
-    transition: 0.5s;
-    transform: translateY(0.25rem);
-}
+  .btn:hover {
+    color: #363939;
+    background-color: #95fdff;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn {
+    margin-top: 30px;
+  }
+  
+  .bottom-container {
+    line-height: 2;
+    background-color: #364451;
+    margin-bottom: 0;
+    padding: 50px;
+  }
+  .contact-me {
+    line-height: 2;
+    margin: 100px auto 100px auto;
+    width: 50%;
+  }
+  .copyright {
+    margin-bottom: 0;
+    color: #44d3e3;
+  }
+  .links {
+    padding: 10px;
+    font-weight: bold;
+  }
+  .footer-link {
+    margin: 10px;
+  }
+  .footer-link:hover {
+    color: #EAF6F6;
+  
+  }
+  
+  
