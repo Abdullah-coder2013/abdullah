@@ -16,6 +16,13 @@
     color: #c6c6c6;
     background-color: #1d252d;
   }
+  .back-button {
+    background-color: #1d252d;
+    border-style: none;
+  }
+  .back-link {
+    color : #11999E;
+  }
   .prog {
     font-family: "Montserrat", sans-serif;
   }

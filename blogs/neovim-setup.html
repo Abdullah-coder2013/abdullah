@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale=1.0'>
+        <title>Neovim Setup</title>
+        <link rel='stylesheet' href='../css.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/onedark.min.css'>
+    </head>
+    <body class='blog'>
+        <button class="back-button"><a class="backlink" href="../blogs.html">← Blogs</a></button>
+        <h1 class="blog-title">Neovim Customization</h1>
+        <p>In this blog I will show you how to customize neovim the way I think is productive.</p>
+        
+        <br>
+        <div class='blog-content'>
+            <h3>Installing Neovim</h3>
+            <p>First you need to have Neovim installed.</p>
+            <p>You can do that by running these commands below:</p>
+            <span>Windows</span><pre><code class="code language-sh">winget install Neovim.Neovim</code></pre>
+            <span>Mac</span><pre><code class="code language-sh">brew install neovim</code></pre>
+            <span>Linux Debian</span><pre><code class="code language-sh">sudo apt install neovim</code></pre>
+            <span>Linux Arch</span><pre><code class="code language-sh">sudo pacman -S neovim</code></pre>
+
+            <h3>Cloning the customization repo</h3>
+            <p>First go into the config directory:</p>
+            <span>Linux</span><pre><code class="code language-sh">cd ~/.config/nvim</code></pre>
+            <span>Windows</span><pre><code class="code language-sh">cd %localappdata%\nvim</code></pre>
+            <p>If there is no nvim directory, create it.</p>
+            <p>Now you need to clone the customization repo.</p>
+            <p>You can do that by running the following command:</p>
+            <pre><code class="code language-sh">git clone https://github.com/Abdullah-coder2013/CoolNeovimSetup</code></pre>
+            <p>Get the files out of the "CoolNeovimSetup" dir and put them in the nvim dir.</p>
+            <p>Delete the "CoolNeovimSetup" dir.</p>
+            <p>Then run:</p>
+            <pre><code class="code language-sh">nvim</code></pre>
+            <p>That's it!</p>
+        </div>
+        <script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js'></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
