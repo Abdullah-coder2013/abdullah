@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
@@ -15,7 +13,7 @@
     margin: 0;
     text-align: center;
     font-family: "Poppins", monospace;
-    color: #566879;
+    color: #c6c6c6;
     background-color: #1d252d;
   }
   .prog {
@@ -145,6 +143,30 @@
     float: right;
     margin-left: 30px;
     filter: none;
+  }
+  .blog-header {
+    font-size: x-large;
+    font-family: "Lilita One";
+  }
+  .blog-title {
+    font-family: "Lilita One";
+    font-size: 60px;
+  }
+  .blog {
+
+    display: flex;
+    flex-direction: column;
+  }
+  .code {
+    width: fit-content;
+    width: -moz-fit-content;
+    border-radius: 10px;
+    font-family: "Jetbrains Mono";
+  }
+  .blog-content {
+    text-align: left;
+    margin: auto;
+    color: #c6c6c6;
   }
   hr {
     border-style: none;
