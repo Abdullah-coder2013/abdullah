@@ -40,6 +40,7 @@
     color: #66BFBF;
     font-weight: normal;
     margin-bottom: 40px;
+    padding: 5px;
   }
   h3 {
     font-family: "Martian Mono", sans-serif;
@@ -60,6 +61,24 @@
     display: inline-block;
     padding: 50px;
     
+  }
+  p {
+    line-height: 3;
+  }
+  .quote {
+    display: inline;
+    font-family: "Architects Daughter", cursive;
+  }
+  .quotey {
+    color: #cc603f;
+    font-size: large;
+    background-color: #1d252d;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Martian Mono";
+  }
+  .quoted {
+    margin: 30px;
   }
   .profiled {
     width: 200px;
@@ -103,12 +122,18 @@
   }
   .js {
     border-radius: 50px;
+    filter: none;
   }
   .skill-row {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
+    /* background-image: url("./images/background.png"); */
+    background-color: #ffffff06;
+    backdrop-filter: blur(4px);
+    padding: 15px;
+    border-radius: 40px;
   }
   .py {
     width: 25%;
@@ -119,13 +144,14 @@
     width: 25%;
     float: right;
     margin-left: 30px;
+    filter: none;
   }
   hr {
     border-style: none;
     border-top-style: dotted;
     border-color: #808b90;
-    border-width: 10px;
-    width: 5%;
+    border-width: 15px;
+    width: 10%;
     margin: auto;
     margin-top: 26px;
     margin-bottom: 26px;
@@ -165,6 +191,7 @@
   }
   .footer-link {
     margin: 10px;
+    font-weight: bold;
   }
   .footer-link:hover {
     color: #EAF6F6;
