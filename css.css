@@ -157,7 +157,7 @@
   }
   .blog-title {
     font-family: "Lilita One";
-    font-size: 60px;
+    font-size: 50px;
   }
   .blog {
 
@@ -169,11 +169,28 @@
     width: -moz-fit-content;
     border-radius: 10px;
     font-family: "Jetbrains Mono";
+    overflow-x: scroll;
   }
+  
   .blog-content {
     text-align: left;
-    margin: auto;
     color: #c6c6c6;
+    padding: 10px;
+    margin: auto;
+    line-height: 1;
+  }
+  @media screen and (max-width: 500px) {
+    .code {
+      width: 75%;
+      overflow-x: scroll;
+    }
+    .blog-content {
+      margin: 0;
+    }
+    .skill-row {
+      width: 80%;
+    }
+    
   }
   hr {
     border-style: none;
