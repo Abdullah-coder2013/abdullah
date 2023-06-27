@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale=1.0'>
+        <title>How JSON Indices Work</title>
+        <link rel='stylesheet' href='../css.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/onedark.min.css'>
+    </head>
+    <body class='blog'>
+        <button class="back-button"><a class="backlink" href="../blogs.html">← Blogs</a></button>
+
+        <h1 class="blog-title">How JSON Indices Work</h1>
+        <p>I had a lot of problems on this subject. I keep trying to figure it out, and I could. But when I actually <strong>need</strong> it, it doesn't come in my head. <br> The other day it did come to my head, so I am wrote it down immediately. I described how this works below.</p>
+        <br>
+        <div class='blog-content'>
+            <h3>What is JSON?</h3>
+            <p>JSON is short form for JavaScript Object Notation and it is a data serialization format.</p>
+            <p>In short forms, you can store data with it.</p>
+            <p>There are stuff that are called Indices, which are used to fetch the data.</p>
+            <h3>Examples for Indices</h3>
+            <pre><code class="code language-json">
+{
+    "name": "Abdullah",
+
+    "hobbies": ["Reading", "Coding", "Cycling"],
+
+    "Working On": "Writing a blog"
+}
+            </code></pre>
+            <p>So this is a normal JSON object. Now we will try to get the value of the key "name".</p>
+            <p>We can do that by:</p>
+            <pre><code class="code language-js">
+let object = require("data.json");
+
+let name = object["name"]; // ["name"] gets the value of the key "name". That is what we call *Keys*
+
+console.log(name);
+
+// Outputs: "Abdullah"
+            </code></pre>
+            <p>Above was a snippet of JavaScript code. It gets the JSON data from the file "data.json" and stores it inside object. Then we get the key: "name".</p>
+
+            <h3>Array Indices</h3>
+            <p>Array Indices work by specifying and index after the array name.</p>
+            <p>For Example:</p>
+            <pre><code class="code language-js">
+console.log(object["hobbies"][0];)
+
+// Outputs: "Reading"
+            </code></pre>
+            <p>Here we get the array name by typing <code class="code language-js">object["hobbies"]</code> and then specify the index.</p>
+            <p>Remember, the indices always start from 0. So, if we want to get the first element in the array, we can write: <code class="code language-js">object["hobbies"][0]</code>.</p>
+
+            <h3>Conclusion</h3>
+
+            <p>This is how JSON Indices work.</p>
+            <p>I know, it is not that hard what it seems, but sometimes it just doesn't come to our heads.</p>
+        </div>
+        <script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js'></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
