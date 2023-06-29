@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale='1.0'>
+        <title>Requests Module in Python</title>
+        <link rel='stylesheet' href='../css.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/onedark.min.css'>
+    </head>
+    <body class='blog'>
+        <button class='back-button'><a class='backlink' href='../blogs.html'>← Blogs</a></button>
+        <h1 class="blog-title">Requests Module</h1>
+        <p>Hi! In this blog I will show you how to use the requests module in Python</p>
+        <br>
+        <div class='blog-content'>
+            <h3>What are HTTP Requests?</h3>
+            <p>HTTP Requests are often used to communicate to an external server from the client (your browser).</p>
+            <p>For example, you want to get data from a website.</p>
+            <p>To do that in Python the <strong>easy</strong> way, you can use the <strong>requests</strong> module.</p>
+            <h3>GET, POST, PUT and DELETE</h3>
+            <p><a>GET</a> Requests are used to fetch data from a server.</p>
+            <p><a>POST</a> Requests are used to send data to the server and (sometimes, based on the server) recieve some data relevant to what you have sent.</p>
+            <p><a>PUT</a> Requests are used to update some data on the server (if it allows it).</p>
+            <p><a>DELETE</a> Requests are used to delete some data on the server (if it allows it as always).</p>
+            <h3>Using the Requests Module</h3>
+            <br>
+            <h3>Example for a GET Request</h3>
+            <pre><code class="code language-python">
+import requests
+
+
+URL = "https://exampleDATABASE.comp/"
+
+response = requests.get(URL)
+
+data = response.json()
+
+print(data)
+            </code></pre>
+            <p>Here, we are getting the data from an example (fake) database.</p>
+            <p>First we import the <strong>requests</strong> module</p>
+            <p>Then we use <code>requests.get()</code> to make a GET request from the url <code class="code language-python">URL</code></p>
+            <p>After that we convert the raw data to <a href="./how_json_works.html">JSON</a>.</p>
+            <p>Then we print the data.</p>
+            <br>
+            <h3>Example for a POST Request</h3>
+            <pre><code class="code language-python">
+import requests
+
+
+URL = "https://exampleDATABASE.comp/"
+
+dataToPost = {"key1": "value1", "key2": "value2"}
+
+response = requests.post(URL, data=dataToPost)
+
+print(response) # Outputs: "key 1 is value1", "key 2 is value2" ### FOR EXAMPLE
+            </code></pre>
+            <p>Here we are using the same database, but using POST Request.</p>
+            <p>First we make a variable that stores some data.</p>
+            <p>Then we use that data to post it to the server by calling <code>requests.post()</code>.</p>
+            <p class="notice">NOTICE: This will not update the database.</p>
+            <br>
+            <h3>Example for a PUT Request</h3>
+            <pre><code class="code language-python">
+import requests
+
+
+URL = "https://exampleDATABASE.comp/"
+
+dataToPut = {"key1": "value1", "key2": "value2"}
+
+response = requests.put(URL, data=dataToPut)
+
+print(response) # Outputs: 200 ### OK
+            </code></pre>
+            <p>Here we are using the same database, but using PUT Request.</p>
+            <p>First we make a variable that stores some data.</p>
+            <p>Then we use that data to put it in the server by calling <code>requests.put()</code>.</p>
+            <p class="notice">NOTICE: The server will get updated by your data, if it supports that.</p>
+            <br>
+            <h3>Example for a DELETE Request</h3>
+            <pre><code class="code language-python">
+import requests
+
+
+URL = "https://exampleDATABASE.comp/"
+
+
+requests.delete("https://exampleDATABASE.comp/16soth.html")
+
+            </code></pre>
+            <p>Here we are using the same database, but using DELETE Request.</p>
+            <p>Then we delete the data from 16soth.html by calling <code>requests.delete()</code>.</p>
+            <p class="notice">NOTICE: The server will get updated by your data, if it supports that.</p>
+            <br>
+            <p>So, that's it.</p>
+            <p>Hope it was helpful.</p>
+        </div>
+        <script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js'></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>

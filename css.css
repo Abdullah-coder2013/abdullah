@@ -179,6 +179,9 @@
     margin: auto;
     line-height: 1;
   }
+  .notice {
+    color: rgb(255, 255, 98);
+  }
   @media screen and (max-width: 500px) {
     .code {
       width: 75%;
