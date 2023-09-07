@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale=1.0'>
+        <title>Blog</title>
+        <link rel='stylesheet' href='../css.css'>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/onedark.min.css'>
+    </head>
+    <body class='blog'>
+        <button class='back-button'><a class='backlink' href='../blogs.html'>← Blogs</a></button>
+        <br>
+        <div class='blog-content'>
+            <h1 class="blog-title">How to communicate with Firebase</h1>
+            <p>Hi guys! It has been a long time since a wrote a blog. So I decided to write one as I learned how to communicate with Firebase.</p>
+            <p>First, you need to make a Firebase project and make a Realtime Database.</p>
+            <p>I won't show that right now, but maybe in the future I will.</p>
+
+            <p>After you got it get the URL from the realtime database.</p>
+            <p>It should look like this: <code>https://your-project-name-random-number-default-rtdb.country.firebasedatabase.app/</code> <strong>It's only an example. It doesn't exist.</strong></p>
+
+            <pre><code class="code language-python">
+import requests
+import json
+
+url = "https://your-project-name-random-number-default-rtdb.country.firebasedatabase.app/"
+data = {
+    "name": "Abdullah",
+    "hobbies": ["Reading", "Coding", "Cycling"],
+    "Working On": "Writing a blog"
+}
+response = requests.post(url, json=data)
+            </code></pre>
+            <p>You set data like the example above.</p>
+            <p>You can get and delete data by using the <code>get()</code> and <code>delete()</code> methods of requests</p>
+            <p>If you want to learn more you can see this <a href="https://abdullah.abdulmunim.com/blogs/requests_module">post</a></p>
+        </div>
+        <script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js'></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
