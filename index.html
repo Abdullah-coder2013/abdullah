@@ -1,98 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Abdullah Bin Abdul Munim</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <div class="first-container">
-      <h1>I'm Abdullah.</h1>
-      <h2 class="prog">a <span class="undl">pro</span>grammer</h2>
-      <!-- <img src="images/swirl.png" class="bottom-cloud" alt="cloud" width="200px"> -->
-      <img src="images/swirl.png" alt="mountain" width="200px" class="mountain">
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdullah — Game Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">ABDULL<span>AH</span></div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"><canvas id="canv"></canvas></div>
+    <div class="scanline"></div>
+    <div class="hero-counter">EST. 2024 — GAME DEV</div>
+
+    <div class="hero-tag">Game Developer / 3D Artist / Engineer</div>
+    <h1 class="hero-title">
+      CODE<br>
+      <span class="red">CREATE</span><br>
+      <span class="outline">CONQUER</span>
+    </h1>
+    <p class="hero-sub">
+      I'm Abdullah — building games in Unreal Engine 5 and Unity with C++ and C#, Web apps with React and Django
+      and shipping things that actually run. Coding since age 8.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-ghost">Get In Touch →</a>
     </div>
 
-    <div class="middle-container">
-      <div class="profile">
-        <img src="images/profilepic.png" alt="myfoto" class="profiled">
-        <h2>Hello.</h2>
-        <p>I am a intermidiate Python + Web developer. I have interest in web and backend development.<br> I have made many programs including <a href="https://github.com/Abdullah-coder2013/Minecraft-Python-Edition">Minecraft Python Edition</a>, <a href="https://github.com/Abdullah-coder2013/JsCalc">JsCalc</a>, and customizations like <a href="https://github.com/Abdullah-coder2013/CoolNeovimSetup">CoolNeovimSetup</a>.<br> I am currently learning <a href="https://react.dev">React</a> and a little bit of <a href="https://pytorch.org/">PyTorch</a>. If you want to know a little bit more of what I am doing, check out my <a href="blogs.html">blogs</a>.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Years Coding</div>
       </div>
-      <hr>
-      <h2>My Websites and Apps</h2>
-      <div class="links">
-        
-        <ol>
-          <li class="link"><a class="link  " target="_blank" href="https://read-quran.pages.dev">- Quran</a></li>
-          <li class="link"><a class="link  " target="_blank" href="JsCalc/index.html">- JsCalc</a></li>
-          <li class="link"><a class="link  " target="_blank" href="ColorSircle/index.html">- ColorSircle</a></li>
-          <li class="link"><a class="link  " target="_blank" href="PyMobile/index.html">- PyMobile</a></li>
-          <li class="link"><a class="link  " target="_blank" href="99-Names-Of-Allah/index.html">- 99 Names Of Allah</a></li>
-        </ol>
+      <div>
+        <div class="stat-num">8</div>
+        <div class="stat-label">Age Started</div>
       </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img src="images/python.png" alt="pythonlogo" class="py">
-          <h3>Python Design & Development</h3>
-          <p class="pyp">I started learning to code when I was 8 years old because I wanted to make computer programs. I was fluent in writing Python code when I was 9 years old. Over time I can code everything from a Guessing Game to a functioning Minecraft clone.</p>
-        </div>
-        <div class="skill-row">
-          <img src="images/javascript.png" alt="javascriptlogo" class="js">
-          <h3>Javascript Development</h3>
-          <p class="jsp">I learned Javascript when I wanted to continue to the next level of web development. Learning Javascript helped me a lot. I can now make desktop Javascript applications (possible with <a href="https://www.electronjs.org/">Electron</a>) and web applications using nodejs.</p>
-          
-        </div>
-        <div class="skill-row">
-          <img src="images/react.png" alt="pythonlogo" class="py">
-          <h3>React Development</h3>
-          <p class="pyp">I started learning React when I tried to make my <a href="https://read-quran.pages.dev">Quran Website</a>. I found out that making a website that changes a lot (eg. a Book as the pages change) I cannot use simple Javascript. I needed to use a framework. So, I chose React.</div></p>
-        </div>
-        <div class="skill-row">
-          <div class="bgimage"></div>
-          <img src="images/unity.png" alt="javascriptlogo" class="js">
-          <h3>Unity Game Development</h3>
-          <p class="jsp">I tried learning Unity when I wanted to make my <a href="https://github.com/Abdullah-coder2013/Minecraft-Python-Edition">Ursina Minecraft clone</a> more like Minecraft. Unfortunatly, Working with Ursina was really hard when making the blocks' sides only appear when the player looks at them. Because of that I pushed myself to learn <a href="https://unity.com">Unity</a>. Now I can make (simple) games with Unity.</p>
-          
-        </div>
-        <div class="skill-row">
-          <img src="images/gear.jpg" alt="pythonlogo" class="py">
-          <h3>Configuration</h3>
-          <p class="pyp">I can configure/customize a lot of my stuff with plugins and sorts. I <a href="https://github.com/Abdullah-coder2013/CoolNeovimSetup">configured Neovim</a> and made a Configuration myself. I also configure stuff that requires a little more effort.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>If you have some questions you can ask me!<br> You know, if you want.</h3>
-        <p>If you want to know more about me,<br> visit my <a href="https://www.github.com/Abdullah-coder2013">Github</a> or my <a class="footer-link" href="https://www.youtube.com/channel/UCZFemMnfw28mvMRLTOFOUUg">Youtube</a> Channel</p>
-        <br>
-        <a class="btn p-2 bg-teal-500 text-slate-800 m-8 rounded-lg" href="mailto:abdullah@munim.net">CONTACT ME</a>
-        <div class="quoted"><h3 class="quote">Remember:</h3><code class="quotey">"Something without testing isn't besting. "</code><h3 class="quote">- Abdullah</h3></div>
-
+      <div>
+        <div class="stat-num">UE<span>5</span></div>
+        <div class="stat-label">Primary Engine</div>
       </div>
     </div>
+  </section>
 
-    
-
-    <div class="bottom-container">
-      <div class="">
-        <a class="footer-link" href="https://www.github.com/Abdullah-coder2013">Github </a>
-        <a class="footer-link" href="https://www.youtube.com/channel/UCZFemMnfw28mvMRLTOFOUUg">Youtube</a>
-      </div>
-      <p class="copyright">© 2023 Abdullah bin Abdul Munim</p>
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span>Unreal Engine 5</span>
+      <span>C++ Systems</span>
+      <span>Blender Model Creation</span>
+      <span>Hardware</span>
+      <span>Game Dev</span>
+      <span>3D Art</span>
+      <span>AI Prompts</span>
+      <span>Windows</span>
+      <span>Unreal Engine 5</span>
+      <span>C# Apps</span>
+      <span>Unity 6</span>
+      <span>Python</span>
+      <span>Web Development</span>
+      <span>3D Art</span>
+      <span>Unity 6</span>
+      <span>Configuration</span>
     </div>
-    
-  </body>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">Selected Work</div>
+    <h2 class="section-title reveal">PROJECTS</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/catan.png" alt="Catan UE5 Replica" />
+        <div class="project-title">Catan UE5 Replica</div>
+        <p class="project-desc">
+          Full AAA-quality recreation of Catan in Unreal Engine 5 using C++.
+          Procedural hex board generation, resource distribution, hot-seat multiplayer,
+          settlement/road placement, and a complete turn system.
+        </p>
+        <div class="project-tags">
+          <span class="tag red">UE5</span>
+          <span class="tag red">C++</span>
+          <span class="tag">Procedural Gen</span>
+          <span class="tag">Game Logic</span>
+          <span class="tag">In Progress</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/Fallen.png" alt="Fallen" />
+        <div class="project-title">Fallen</div>
+        <p class="project-desc">
+          An indie game concept build in Unity with C#. A 2.5D Metroidvania with hand-drawn art and focus on tight, responsive controls and fast-paced combat. Currently in early prototyping stages.
+        </p>
+        <div class="project-tags">
+          <span class="tag red">C#</span>
+          <span class="tag red">Unity</span>
+          <span class="tag">Game Design</span>
+          <span class="tag">Concept</span>
+        </div>
+        <a href="https://abdullahbam.itch.io/fallen" class="project-link" target="_blank">Itch ↗</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/books.jpg" alt="d-Reader" />
+        <div class="project-title">d-Reader</div>
+        <p class="project-desc">
+          A digital personal library that tracks you reading progress. It uses the Google Books API to search among millions of books and save them to your collection.
+        </p>
+        <div class="project-tags">
+          <span class="tag red">React</span>
+          <span class="tag red">Django</span>
+          <span class="tag">Web Dev</span>
+          <span class="tag">API Integration</span>
+        </div>
+        <a href="https://dreader.int.munim.net" class="project-link" target="_blank">Live ↗</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/minecraft.png" alt="Minecraft Python Edition" />
+        <div class="project-title">Minecraft Python Edition</div>
+        <p class="project-desc">
+          A functioning Minecraft clone written in Python from scratch.
+          One of my earliest major projects — block placement, world generation,
+          and rendering all built manually.
+        </p>
+        <div class="project-tags">
+          <span class="tag red">Python</span>
+          <span class="tag">Ursina</span>
+          <span class="tag">3D Engine</span>
+          <span class="tag">Open Source</span>
+        </div>
+        <a href="https://github.com/Abdullah-coder2013/Minecraft-Python-Edition" class="project-link" target="_blank">GitHub ↗</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/quran_screenshot.png" alt="Quran Web App" />
+        <div class="project-title">Quran Web App</div>
+        <p class="project-desc">
+          A full React web application for reading the Quran. Built to learn React's
+          component model and state management for dynamic, page-based content.
+        </p>
+        <div class="project-tags">
+          <span class="tag red">React</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Web Dev</span>
+        </div>
+        <a href="https://read-quran.pages.dev" class="project-link" target="_blank">Live ↗</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-img" src="images/morecoming.jpg" alt="More Coming" />
+        <div class="project-title">More Coming</div>
+        <p class="project-desc">
+          Currently deep in UE5 game development. First original commercial title
+          in progress — follow the journey on YouTube.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label reveal">Arsenal</div>
+    <h2 class="section-title reveal">SKILLS</h2>
+    <div class="skills-grid">
+      <div class="skill-item reveal">
+        <div class="skill-name">Unreal Engine 5</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">C++</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">Blender</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:72%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">Python</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:68%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">React</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">Unity Game Development</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">3D Art / VFX</div>
+        <div class="skill-level">Intermediate</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label reveal">The Story</div>
+    <h2 class="section-title reveal">ABOUT</h2>
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <div class="about-quote">"Something without testing isn't besting."</div>
+        <p>I'm <strong>Abdullah</strong> — a 13-year-old game developer based in Germany, building
+        things in Unreal Engine 5 with C++, rendering worlds in Blender and prototyping in Unity. I started
+        coding at <strong>age 8</strong> because I wanted to make games, and I haven't stopped since.</p>
+        <p>My current obsession is <strong>Catan in UE5</strong> — a full AAA-quality board game
+        replica built from scratch with procedural hex generation, complete game logic,
+        and hot-seat multiplayer. I also build AI tooling to make my dev workflow faster.</p>
+        <p>When I'm not coding, I'm into <strong>maths and physics</strong>, 3D art, and PC hardware.
+        Over 5 years of experience.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-year">2021</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Started Coding — Age 8</div>
+            <div class="timeline-desc">Learned Python. First programs, first bugs, first obsession.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Python Fluency</div>
+            <div class="timeline-desc">Built a Minecraft clone from scratch in Python. Learned what "hard" really means.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Web Dev + Django</div>
+            <div class="timeline-desc">Jumped into JavaScript. Shipped web apps, learned React, powered by Django.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Unity</div>
+            <div class="timeline-desc">Dived deeper into the iceberg. Unity and C# were next.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Unity Expertise</div>
+            <div class="timeline-desc">Became proficient in Unity and C#. Made an indie game concept.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Started with UE5</div>
+            <div class="timeline-desc">Dived into Unreal Engine 5 with C++. Building lots of cool stuff.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label reveal">Let's Talk</div>
+    <div class="contact-inner">
+      <div class="reveal">
+        <h2 class="contact-big">GET IN<br><span>TOUCH</span></h2>
+        <p style="margin-top:24px; font-size:14px; color:var(--muted); line-height:1.8;">
+          Interested in collaborating, have a project idea, or just want to talk game dev?
+          Hit me up.
+        </p>
+      </div>
+      <div class="contact-links reveal">
+        <a href="https://github.com/Abdullah-coder2013" class="contact-link-item" target="_blank">
+          <span class="contact-link-name">GitHub</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UCZFemMnfw28mvMRLTOFOUUg" class="contact-link-item" target="_blank">
+          <span class="contact-link-name">YouTube</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="mailto:contact@abdulmunim.com" class="contact-link-item">
+          <span class="contact-link-name">Email</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Abdullah bin Abdul Munim<span>.</span> All rights reserved.</p>
+    <p>Built with <span>///</span> no frameworks. just code.</p>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+    function animRing() {
+      rx += (mx - rx) * 0.15;
+      ry += (my - ry) * 0.15;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animRing);
+    }
+    animRing();
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => obs.observe(el));
+
+    // Skill bar animation on hover
+    document.querySelectorAll('.skill-item').forEach(item => {
+      const fill = item.querySelector('.skill-bar-fill');
+      const width = fill.style.width;
+      fill.style.width = '100%';
+      item.addEventListener('mouseenter', () => {
+        fill.style.transform = `scaleX(${parseFloat(width)/100})`;
+      });
+      item.addEventListener('mouseleave', () => {
+        fill.style.transform = 'scaleX(0)';
+      });
+    });
+    const canvas = document.getElementById('canv');
+const ctx = canvas.getContext('2d');
+
+const w = canvas.width = document.body.offsetWidth;
+const h = canvas.height = document.body.offsetHeight;
+const cols = Math.floor(w / 20) + 1;
+const ypos = Array(cols).fill(0);
+
+ctx.fillStyle = '#000';
+ctx.fillRect(0, 0, w, h);
+
+function matrix () {
+  ctx.fillStyle = '#0001';
+  ctx.fillRect(0, 0, w, h);
+  
+  ctx.fillStyle = '#0f0';
+  ctx.font = '15pt monospace';
+  
+  ypos.forEach((y, ind) => {
+    const text = String.fromCharCode(Math.random() * 128);
+    const x = ind * 20;
+    ctx.fillText(text, x, y);
+    if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
+    else ypos[ind] = y + 20;
+  });
+}
+
+setInterval(matrix, 50);
+  </script>
+</body>
 </html>
